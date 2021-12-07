@@ -23,12 +23,8 @@ variables:
   projectRoot: $(System.DefaultWorkingDirectory)/Application
 
   # Python version: 3.7
-  
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.x'
-    addToPath: true
-    architecture: 'x64'
+  pythonVersion: '3.7'
+
 
 stages:
 - stage: Build
